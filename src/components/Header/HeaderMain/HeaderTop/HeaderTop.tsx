@@ -7,29 +7,31 @@ import AvatarIcon from "../../../../assets/img/avatar.svg";
 import ClipboardIcon from "../../../../assets/img/clipboard.svg";
 import ScissorsIcon from "../../../../assets/img/scissors.svg";
 import TricolorIcon from "../../../../assets/img/tricolor.svg";
+import WhiteTickIcon from "../../../../assets/img/whiteTick.svg";
 import { useHeaderTopStyled } from "./style";
 
 const HeaderTop = () => {
   const {
-    HeaderTopWrapSC,
-    HeaderTopLeftWrapSC,
-    HeaderTopNumberSC,
     HeaderTopMailSC,
-    HeaderTopCenterWrapSC,
-    HeaderTopSocialSC,
-    HeaderTopInputSC,
-    HeaderTopRightWrapSC,
+    HeaderTopWrapSC,
     HeaderTopElemSC,
+    HeaderTopInputSC,
+    HeaderTopSocialSC,
+    HeaderTopNumberSC,
+    HeaderTopLeftWrapSC,
+    HeaderTopLanguageSC,
+    HeaderTopRightWrapSC,
+    HeaderTopCenterWrapSC,
   } = useHeaderTopStyled();
 
   return (
     <HeaderTopWrapSC>
       <HeaderTopLeftWrapSC>
         <HeaderTopNumberSC>
-          <h5>+7 (912) 799-69-80</h5>
+          <h4>+7 (912) 799-69-80</h4>
         </HeaderTopNumberSC>
         <HeaderTopMailSC>
-          <h5>info@gmail.com</h5>
+          <h4>info@gmail.com</h4>
         </HeaderTopMailSC>
       </HeaderTopLeftWrapSC>
       <HeaderTopCenterWrapSC>
@@ -42,22 +44,23 @@ const HeaderTop = () => {
         <HeaderTopInputSC>
           <HeaderTopElemSC>
             <AvatarIcon />
-            <h5>Кабинет клиента</h5>
+            <h4>Кабинет клиента</h4>
           </HeaderTopElemSC>
           <HeaderTopElemSC>
             <ClipboardIcon />
-            <h5>Кабинет мастера</h5>
+            <h4>Кабинет мастера</h4>
           </HeaderTopElemSC>
           <HeaderTopElemSC>
             <ScissorsIcon />
-            <h5>Онлайн-запись</h5>
+            <h4>Онлайн-запись</h4>
           </HeaderTopElemSC>
         </HeaderTopInputSC>
       </HeaderTopCenterWrapSC>
       <HeaderTopRightWrapSC>
         <HeaderTopElemSC>
           <TricolorIcon />
-          <h5>Язык</h5>
+          <HeaderTopLanguageSC>Язык</HeaderTopLanguageSC>
+          <WhiteTickIcon />
         </HeaderTopElemSC>
       </HeaderTopRightWrapSC>
     </HeaderTopWrapSC>

@@ -1,14 +1,15 @@
 import React from "react";
-// import type { NextPage } from "next";
+import type { NextPage } from "next";
 import HeaderMain from "../components/Header/HeaderMain/HeaderMain";
 import Theme from "../theme/Theme";
+import AuthPage from "../components/AuthPage/Auth";
 
-const Home = () => {
+const Home: NextPage = () => {
   return (
     <>
       <Theme>
         <HeaderMain />
-        <h1>HomeHomeHomeHome</h1>
+        <AuthPage />
       </Theme>
     </>
   );
